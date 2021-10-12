@@ -2,7 +2,7 @@
 //  CreditsView.swift
 //  Notes WatchKit Extension
 //
-//  Created by Bismillah on 4.10.2021.
+//  Created by zainirejab in 2021.
 //
 
 import SwiftUI
