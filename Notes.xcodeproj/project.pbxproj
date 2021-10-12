@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0A62872709872E0016BACE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A62862709872E0016BACE /* DetailView.swift */; };
+		1DBA542E271455D7003FEB2D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA542D271455D7003FEB2D /* SettingsView.swift */; };
 		1DEE46CE2707654600691036 /* Notes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1DEE46CD2707654600691036 /* Notes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1DEE46D32707654700691036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEE46D22707654700691036 /* Assets.xcassets */; };
 		1DEE46DA2707654700691036 /* Notes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1DEE46D92707654700691036 /* Notes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -15,6 +17,9 @@
 		1DEE46E32707654700691036 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE46E22707654700691036 /* ComplicationController.swift */; };
 		1DEE46E52707654800691036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEE46E42707654800691036 /* Assets.xcassets */; };
 		1DEE46E82707654800691036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEE46E72707654800691036 /* Preview Assets.xcassets */; };
+		1DEE46FB27076CFC00691036 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE46FA27076CFC00691036 /* Note.swift */; };
+		1DFEB949270AFE7000F62BA2 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEB948270AFE6F00F62BA2 /* CreditsView.swift */; };
+		1DFEB94C270B009200F62BA2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEB94B270B009200F62BA2 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D0A62862709872E0016BACE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1DBA542D271455D7003FEB2D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1DEE46C92707654500691036 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DEE46CD2707654600691036 /* Notes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DEE46D22707654700691036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +78,9 @@
 		1DEE46E42707654800691036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DEE46E72707654800691036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DEE46E92707654800691036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DEE46FA27076CFC00691036 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		1DFEB948270AFE6F00F62BA2 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		1DFEB94B270B009200F62BA2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +125,9 @@
 		1DEE46DD2707654700691036 /* Notes WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				1DEE46DE2707654700691036 /* ContentView.swift */,
+				1DFEB94A270B006B00F62BA2 /* Component */,
+				1DEE46F927076CBF00691036 /* Model */,
+				1DEE46F827076CA900691036 /* View */,
 				1DEE46E02707654700691036 /* NotesApp.swift */,
 				1DEE46E22707654700691036 /* ComplicationController.swift */,
 				1DEE46E42707654800691036 /* Assets.xcassets */,
@@ -131,6 +143,33 @@
 				1DEE46E72707654800691036 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DEE46F827076CA900691036 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DEE46DE2707654700691036 /* ContentView.swift */,
+				1D0A62862709872E0016BACE /* DetailView.swift */,
+				1DFEB948270AFE6F00F62BA2 /* CreditsView.swift */,
+				1DBA542D271455D7003FEB2D /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DEE46F927076CBF00691036 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DEE46FA27076CFC00691036 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DFEB94A270B006B00F62BA2 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				1DFEB94B270B009200F62BA2 /* HeaderView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DEE46DF2707654700691036 /* ContentView.swift in Sources */,
+				1DBA542E271455D7003FEB2D /* SettingsView.swift in Sources */,
 				1DEE46E12707654700691036 /* NotesApp.swift in Sources */,
 				1DEE46E32707654700691036 /* ComplicationController.swift in Sources */,
+				1DFEB949270AFE7000F62BA2 /* CreditsView.swift in Sources */,
+				1D0A62872709872E0016BACE /* DetailView.swift in Sources */,
+				1DEE46FB27076CFC00691036 /* Note.swift in Sources */,
+				1DFEB94C270B009200F62BA2 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
